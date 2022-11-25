@@ -16,9 +16,10 @@ struct LabelDocente: View {
             RoundedRectangle(cornerRadius: 16)
                 .stroke(style: StrokeStyle(lineWidth: 1))
                 .foregroundColor(.gray)
-                .frame(height: 90)
+                .frame(height: 80)
                 .shadow(color: .gray, radius: 2, y: 1)
                 .background(.white)
+                .opacity(0.75)
             
             
             HStack{
@@ -26,13 +27,13 @@ struct LabelDocente: View {
                     Image(prof.imageName)
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 80, height: 80)
+                        .frame(width: 70, height: 70)
                         .clipShape(Circle())
-                        .padding(.leading)
+                        .padding(.horizontal)
                 }
                 .frame(alignment: .leading)
                 Button(prof.fullName) {showModal=true}
-                    .font(.system(size: 22, weight: .semibold, design: .rounded))
+                    .font(.system(size: 20, weight: .semibold, design: .rounded))
                 Spacer()
                 
                     .sheet(isPresented: $showModal) {
@@ -42,7 +43,6 @@ struct LabelDocente: View {
             .foregroundColor(CustomColor.myColor)
         }
         
-        .padding(.bottom)
         .padding(.horizontal)
         
         

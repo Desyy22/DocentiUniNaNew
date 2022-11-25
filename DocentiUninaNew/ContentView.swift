@@ -46,7 +46,7 @@ struct ContentView: View {
                         Button {
                             showModalPlus=true
                         } label: {
-                            Image(systemName: "person.fill.badge.plus")
+                            Image(systemName: "plus")
                                 .font(.system(size: 20))
                         }
                         .sheet(isPresented: $showModalPlus) {
