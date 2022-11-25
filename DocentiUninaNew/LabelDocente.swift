@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct LabelDocente: View {
     var prof : Docente
     @State var showModal = false
@@ -38,7 +39,7 @@ struct LabelDocente: View {
                         ModalView(isShowing: $showModal)
                     }
             }
-            .foregroundColor(.blue)
+            .foregroundColor(CustomColor.myColor)
         }
         
         .padding(.bottom)

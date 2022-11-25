@@ -76,10 +76,13 @@ struct ModalView: View {
                     )
                     .padding(.vertical)
                     Spacer()
-                    Link("Vai alla pagina del Docente", destination: URL(string: "https://www.youtube.com/watch?v=xvFZjo5PgG0")!)
+                    Link(destination: URL(string: "https://www.youtube.com/watch?v=xvFZjo5PgG0")!,
+                         label: {
+                        Text("Vai alla pagina del docente")
+                            .underline()
+                    })
                         .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(.blue)
-                        .underline()
+                        .foregroundColor(CustomColor.myColor)
                     Spacer()
                 }
                 .padding(.top, 40)

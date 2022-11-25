@@ -51,7 +51,7 @@ struct ProfessorModal: View {
                     .navigationTitle("Aggiungi un Docente")
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbarColorScheme(.dark, for: .navigationBar)
-                    .toolbarBackground(Color.blue, for: .navigationBar)
+                    .toolbarBackground(CustomColor.myColor, for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                 }
             }

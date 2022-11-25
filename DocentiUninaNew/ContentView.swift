@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-
+struct CustomColor {
+    static let myColor = Color("BluDocenti")
+}
 
 struct ContentView: View {
     @State var showModal = false
@@ -36,7 +38,7 @@ struct ContentView: View {
                 }
                 .navigationTitle("I miei Docenti")
                 .toolbarColorScheme(.dark, for: .navigationBar)
-                .toolbarBackground(Color.blue, for: .navigationBar)
+                .toolbarBackground(CustomColor.myColor, for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
                 .navigationTitle("SwiftUI")
                 .toolbar {
